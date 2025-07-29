@@ -1,3 +1,5 @@
+
+# returns the number of words in the book as an int
 def get_word_count(book):
     split_book = book.split()
     word_count = 0
@@ -5,6 +7,7 @@ def get_word_count(book):
         word_count += 1
     return word_count
 
+# returns each char that is in the book and how many as a dict
 def get_char_count(text):
     new_text = text.lower()
     char_list = list(new_text)
@@ -20,6 +23,7 @@ def get_char_count(text):
             char_count[char] = 1
     return char_count
 
+# organizes and returns dict as a list of dicts
 def organize_list(my_dict):
 
     my_list = []
